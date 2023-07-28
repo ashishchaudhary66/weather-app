@@ -30,7 +30,6 @@ yourWeather.addEventListener('click',()=>{
     searchWeather.style.backgroundColor="transparent";
     if(currentTab!=yourWeather){
         searchCity.classList.remove("active");
-        weatherInfo.classList.add("active");
         currentTab=yourWeather;
         getfromSessionStorage();
     }
