@@ -10,6 +10,7 @@
     min-height: 100vh;
 }
 .container{
+    position: relative;
     display: flex;
     flex-direction: column;
     margin: 3rem auto;
@@ -17,6 +18,7 @@
     color: white;
     align-items: center;
     gap: 2rem;
+    width:500px;
 }
 .weather-container{
     position: relative;
@@ -25,12 +27,10 @@
     width: 100%;
 }
 .tab{
-    position: relative;
     width: 100%;
     display: flex;
     flex-direction: row;
     justify-content: space-between;
-    gap: 15rem;
 }
 .tab p{
     cursor: pointer;
@@ -146,4 +146,12 @@
 .weather-description{
     font-size: 1.5rem;
     font-weight: 500;
+}
+@media screen and (max-width : 500px) {
+    .container{
+        max-width: 80%;
+    }
+    .weather-info-more{
+        flex-direction: column;
+    }
 }
