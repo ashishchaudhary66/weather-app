@@ -1,0 +1,149 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+.wrapper{
+    display: flex;
+    justify-content: center;
+    background: linear-gradient(180deg, rgba(20, 125, 209, 1) 25%, rgba(0, 188, 212, 1) 100%);
+    min-height: 100vh;
+}
+.container{
+    display: flex;
+    flex-direction: column;
+    margin: 3rem auto;
+    max-width: 500px;
+    color: white;
+    align-items: center;
+    gap: 2rem;
+}
+.weather-container{
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+}
+.tab{
+    position: relative;
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    gap: 15rem;
+}
+.tab p{
+    cursor: pointer;
+    font-size: 18px;
+    padding: 5px;
+    border-radius: 5px;
+}
+.grant-location{
+    display: none;
+    flex-direction: column;
+    gap: 0.5rem;
+    align-items: center;
+    justify-content: center;
+}
+.grant-location button{
+    background-color: rgb(5, 137, 189);
+    padding: 8px 20px;
+    font-size: 14px;
+    cursor: pointer;
+    border-radius: 10px;
+    color: white;
+    border: none;
+    text-transform: uppercase;
+}
+.weather-info{
+    position: relative;
+    width: 100%;
+    display: none;
+    flex-direction: column;
+    align-items: center;
+    margin: 2rem 0;
+    gap:0.5rem;
+}
+.weather-info-more{
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 1rem;
+    margin-top: 1rem;
+}
+.card{
+    display: flex;
+    flex-direction: column;
+    background-color: rgb(87, 171, 205);
+    border-radius: 0.3rem;
+    justify-content: center;
+    align-items: center;
+    padding: 10px;
+    min-width: 150px;
+}
+.card img{
+    width: 70px;
+}
+.card h3{
+    text-transform: uppercase;
+}
+.card p{
+    font-size: 18px;
+    padding: 3px 0;
+}
+.loading{
+    display: none;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+}
+.loading img{
+    width:10rem;
+    height:10rem;
+}
+.search-bar{
+    position: relative;
+    display: none;
+    flex-direction: row;
+    justify-content: space-between;
+    gap: 0.75rem;
+    
+}
+.search-button{
+    background-color: transparent;
+    border: none;
+    display: flex;
+    align-items: center;
+    cursor: pointer;
+}
+.search-button img{
+    width: 30px;
+    height: 30px;
+}
+.search-text{
+    border-radius: 20px;
+    border: none;
+    width: 100%;
+    padding: 8px 8px;
+    outline: none;
+    font-size: 15px;
+    letter-spacing: 2px;
+    font-weight: 500;
+}
+
+.active{
+    display: flex;
+}
+.flag{
+    width: 20px;
+    height: 20px;
+}
+.city-flag{
+    display: flex;
+    flex-direction: row;
+    gap: 1rem;
+}
+.weather-description{
+    font-size: 1.5rem;
+    font-weight: 500;
+}
